@@ -7,5 +7,7 @@ Sample Collector is an application for collecting images and other data, built u
 Admin
 ===============
 Admin can manage Sample Collector. Login by following information:
+
 username: admin
+
 password: 123456

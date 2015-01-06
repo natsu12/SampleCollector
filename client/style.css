@@ -1,0 +1,13 @@
+#name, #studentNumber {
+	width: 50%;
+}
+
+.tableImage {
+	height: 30%;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.clear {
+	clear: both;
+}

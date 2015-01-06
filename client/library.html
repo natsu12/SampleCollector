@@ -1,0 +1,40 @@
+<template name="Library">
+	<div class="container">
+    	<div class="page-header">
+			<h1>Sample Collector</h1>
+			{{> loginButtons }}
+		</div>
+		
+		{{#unless admin}}
+			{{> Submit}}
+			<div class="row">
+				<a href="/user" class="btn btn-primary btn-lg" role="button">Back</a>
+			</div>
+			
+		{{/unless}}
+	
+		{{#if admin}}
+			<div class="row">
+				{{#each samples}}
+					{{> Sample}}
+				{{/each}}
+			</div>
+			<a href="/admin" class="btn btn-primary btn-lg" role="button">Back</a>
+		{{/if}}
+		
+    </div>
+</template>
+ 
+<template name="library">
+	<div class="col-md-3">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h3 class="panel-title">Library</h3>
+			</div>
+			<div class="panel-body">
+				<p class="text-center lead">{{name}}</p>
+				<a href="{{pathFor 'library'}}" class="btn btn-primary btn-sm center-block enter" role="button">Enter the library</a>
+			</div>
+		</div>
+	</div>
+</template>

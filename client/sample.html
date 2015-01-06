@@ -1,0 +1,26 @@
+<template name="Sample">
+	<div class="col-md-5">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h3 class="panel-title">Sample</h3>
+			</div>
+			<div class="panel-body">
+				<dl>
+					<dt>Name</dt>
+					<dd>{{studentName}}</dd>
+				</dl>
+				<dl>
+					<dt>Student Number</dt>
+					<dd>{{studentNumber}}</dd>
+				</dl>
+				<dl>
+					<dt>Image</dt>
+					{{#each images}}
+					<img src="{{this.url}}" class = "tableImage col-xs-12 col-md-8" alt="thumbnail">
+					{{/each}}
+				</dl>
+			</div>
+		</div>
+	</div>
+	
+</template> 
